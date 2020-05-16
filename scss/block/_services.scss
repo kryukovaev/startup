@@ -1,0 +1,29 @@
+.services__list {
+  display: flex;
+  margin: 0 rem(-20px);
+}
+
+.services__item {
+  text-align: center;
+  width: 33.33333%;
+  padding: 0 rem(20px);
+}
+
+.servisec__icon {
+  width: rem(90px);
+  height: rem(90px);
+  margin-bottom: rem(30px);
+}
+
+.services__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(14px);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: rem(24px);
+}
+
+.services__text {
+  font-size: rem(14px);
+  line-height: 1.71;
+}

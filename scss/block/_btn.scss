@@ -1,0 +1,21 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  border: 2px solid $white;
+  background: 0;
+  cursor: pointer;
+  padding: rem(19px) rem(35px);
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: $red;
+    background-color: $white;
+    border-color: $red;
+  }
+}

@@ -1,0 +1,16 @@
+.nav__link {
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(14px);
+  color: $white;
+  text-decoration: none;
+  margin-left: rem(20px);
+  transition: text-decoration 0.2s linear;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

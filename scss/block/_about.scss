@@ -1,0 +1,101 @@
+.about {
+  background-color: $gray-light;
+}
+
+.about__text {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: rem(14px);
+  line-height: 1.71;
+  margin: 0 rem(-15px);
+  p {
+    padding: 0 rem(15px);
+    max-width: rem(553px);
+    margin-bottom: rem(71px);
+  }
+}
+
+.about__list {
+  position: relative;
+  display: flex;
+  margin: 0 rem(-15px);
+}
+
+.about__item {
+  width: 25%;
+  padding: 0 rem(15px);
+}
+
+.about__inner {
+  position: relative;
+  transition: opacity 0.2s linear;
+  margin-bottom: rem(20px);
+
+  &:before {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    background-color: rgba($gray, 0.5);
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+  }
+}
+.about__inner:hover:before {
+  opacity: 1;
+}
+
+.about__inner:hover .social {
+  opacity: 1;
+}
+
+.about__photo {
+  max-width: rem(263px);
+  height: rem(250px);
+  overflow: hidden;
+}
+
+.about__info {
+  text-align: center;
+}
+
+.about__name {
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(14px);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: rem(8px);
+}
+
+.about__prof {
+  font-size: rem(13px);
+}
+
+.about__btn {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 34%;
+  cursor: pointer;
+  padding: rem(11px) rem(13.5px);
+  background-color: rgba($gray, 0.2);
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: $red;
+  }
+}
+
+.btn-next {
+  right: rem(15px);
+}
+
+.btn-prev {
+  left: rem(15px);
+}
+.btn__img {
+  width: rem(8px);
+  height: rem(14px);
+}

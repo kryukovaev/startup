@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: rem(45px);
+  padding-bottom: rem(45px);
+}
+
+.header__logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(24px);
+  font-weight: 700;
+  color: $white;
+}

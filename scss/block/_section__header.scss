@@ -1,0 +1,27 @@
+.section__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: rem(70px);
+}
+
+.section__header-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(20px);
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: $gray;
+    margin: rem(30px) auto;
+  }
+}
+
+.section__header-text {
+  font-size: 1rem;
+}

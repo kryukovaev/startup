@@ -1,0 +1,120 @@
+.works-nav {
+  display: flex;
+}
+
+.works-nav__item {
+  margin-left: rem(15px);
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.works-nav__link {
+  font-size: 1rem;
+  color: $gray;
+  text-decoration: none;
+  transition: color 0.2 linear;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+.works__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: rem(-15px);
+}
+
+.works__item {
+  width: rem(360px);
+  overflow: hidden;
+  padding: rem(15px);
+}
+
+.works__inner {
+  position: relative;
+  transition: opacity 0.2s linear;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba($red, 0.6);
+    opacity: 0;
+  }
+  &:hover:before {
+    opacity: 1;
+  }
+  &:hover .works__info {
+    opacity: 1;
+  }
+}
+
+.works__info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: $white;
+  opacity: 0;
+  z-index: 20;
+}
+
+.works__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(19px);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: rem(10px);
+}
+
+.works__text {
+  font-size: rem(12px);
+  margin-bottom: rem(20px);
+}
+
+.works__btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border: 0;
+  background-color: $white;
+  font-family: "Roboto Slab", serif;
+  font-size: rem(14px);
+  text-transform: uppercase;
+  color: $red;
+  padding-top: rem(13px);
+  padding-right: rem(39px);
+  padding-bottom: rem(13px);
+  padding-left: rem(20px);
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background-color: $red;
+    color: $white;
+  }
+
+  &:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url("../../images/red-arrow.svg");
+    width: rem(6px);
+    height: rem(10px);
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &:hover:before {
+    display: block;
+    background-image: url("../../images/next.svg");
+    background-size: cover;
+  }
+}

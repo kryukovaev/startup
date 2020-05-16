@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+  opacity: 0;
+}
+
+.social__item {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background-color: $red;
+  }
+}
+
+.social__icon {
+  width: 17px;
+  height: 16px;
+}
